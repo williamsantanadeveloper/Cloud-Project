@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8r$yfjajq8o3=h$u=v2u+9y-t=28*-ey)c)fmiduhu3a!l8vfa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['cloud-project-squad09.azurewebsites.net', 'localhost']
 
@@ -120,8 +120,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = '/tmp/8dc7cbdc42d0615/static/'
-STATIC_URL = os.path.join(BASE_DIR, 'static/')
+STATIC_URL = 'assets/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'assets/'),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
