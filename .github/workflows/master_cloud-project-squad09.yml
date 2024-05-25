@@ -27,14 +27,14 @@ jobs:
           python -m venv venv
           source venv/bin/activate
       
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      #- name: Install dependencies
+      #  run: pip install -r requirements.txt
         
-      - name: Migrate changes
-        run: python manage.py migrate
+      #- name: Migrate changes
+      #  run: python manage.py migrate
         
-      - name: Collect static
-        run: python manage.py collectstatic --noinput
+      #- name: Collect static
+      #  run: python manage.py collectstatic --noinput
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
