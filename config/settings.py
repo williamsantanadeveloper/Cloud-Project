@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-8r$yfjajq8o3=h$u=v2u+9y-t=28*-ey)c)fmiduhu3a!l8vfa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cloud-project-squad09.azurewebsites.net', 'localhost']
+ALLOWED_HOSTS = ['cloud-project-squad-9.azurewebsites.net', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://cloud-project-squad09.azurewebsites.net',
+    'https://cloud-project-squad-9.azurewebsites.net/',
 ]
 
 # Application definition
@@ -84,7 +84,7 @@ DATABASES = {
         "NAME": "cloud-project-database",
         "USER": "mysql_user",
         "PASSWORD": "password123A!",
-        "HOST": "cloud-project-server.mysql.database.azure.com",
+        "HOST": "cloud-project-squad-9-server.mysql.database.azure.com",
         "PORT": "3306",
     }
 }
