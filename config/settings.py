@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['cloud-project-squad-9.azurewebsites.net', 'squad9.cloud', '127
 
 CSRF_TRUSTED_ORIGINS = [
     'https://cloud-project-squad-9.azurewebsites.net',
-    'squad9.cloud'
+    'https://squad9.cloud'
 ]
 
 # Application definition
