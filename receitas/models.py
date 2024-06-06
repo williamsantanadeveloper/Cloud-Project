@@ -14,4 +14,4 @@ class Receita(models.Model):
     tags = models.ManyToManyField(Tag)
 
     def __str__(self):
-        return f"{self.id} - {self.nome}"
+        return f"{self.id} - {self.titulo}"
