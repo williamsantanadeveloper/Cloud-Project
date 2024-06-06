@@ -25,10 +25,11 @@ SECRET_KEY = 'django-insecure-8r$yfjajq8o3=h$u=v2u+9y-t=28*-ey)c)fmiduhu3a!l8vfa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cloud-project-squad-9.azurewebsites.net', '127.0.0.1']
+ALLOWED_HOSTS = ['cloud-project-squad-9.azurewebsites.net', 'squad9.cloud', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://cloud-project-squad-9.azurewebsites.net',
+    'squad9.cloud'
 ]
 
 # Application definition
